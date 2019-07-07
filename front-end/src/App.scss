@@ -1,0 +1,31 @@
+// 预处理器可以使用全局块，https://github.com/css-modules/css-modules#usage-with-preprocessors
+:global {
+    .App {
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    // 顶部固定说明条
+    .fixed-header {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 5;
+    }
+
+    // 底部固定导航栏
+    .fixed-footer {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: 5;
+    }
+    .has-fixed-header {
+        padding-top: 45px;
+    }
+    .has-fixed-footer {
+        padding-bottom: 44px;
+    }
+}
